@@ -19,9 +19,10 @@ body
 .clear
 {
 	clear:both;
-	margin:0 auto;
+	margin:0 auto 0 449px;
 	padding:0;
-	height:1px;
+	height:19px;
+    width: 656px;
 }
 img
 {
@@ -407,9 +408,8 @@ img
 /*----------------------------------------------------ProList--------------------------------------------------*/
 .pro_r
 {
-	width:760px;
-	float:left;
-	margin-left:30px;
+	width:988px;
+	margin-left:150px;
 }
 .pro_ys
 {
@@ -448,35 +448,43 @@ img
 /*----------------------------------------------------ProIofo--------------------------------------------------*/
 .info_t_t
 {
-	background-image:url(../images/good_bg_t.gif);
-	width:750px;
-	height:13px;
+	background-image:url('../images/good_bg_t.gif');
+	width:1063px;
+	height:4px;
 	overflow:hidden;
+    
 }
 .info_t_b
 {
-	background-image:url(../images/good_bg_m.gif);
-	width:650px;
+	
+	width:979px;
 	padding:0 50px;
 	overflow:hidden;
+    height: 764px;
 }
 	.info_t_b_l
 	{
 		float:left;
-		width:285px;
+		width:237px;
 		padding:0 30px;
-	}
+    height: 333px;
+    margin-left: 0;
+}
 	.info_t_b_r
 	{
-		width:350px;
+		width:351px;
 		float:left;
-	}
+    margin-left: 300px;
+    height: 481px;
+    margin-bottom: 0;
+}
 	
 .info_t_f
 {
-	background-image:url(../images/good_bg_f.gif);
-	width:750px;
-	height:13px;
+	background-image:url('../images/good_bg_f.gif');
+	width:1090px;
+	height:21px;
+    
 }
 
 .table_detail {width:100%; border:none;}
@@ -485,7 +493,10 @@ img
 .table_detail td.T_left,.table_detail th.T_left{ text-align:left;}
 .table_detail td.T_right,.table_detail th.T_right{ text-align:right;}
 
-.submit { padding:15px 0 0px 0;}
+.submit { padding:15px 0 0px 0;
+    height: 98px;
+    width: 351px;
+}
 
 .button_01{display:inline-block;padding:8px 10px;*padding:9px 10px 7px 10px;border:1px #D99DB7 solid; background:#fff;text-align:center; color:#fff;}
 .button_01:hover{background:#fff;border:1px #D18BAA solid; color:#fff;}
