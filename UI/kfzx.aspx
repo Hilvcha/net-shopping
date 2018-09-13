@@ -7,12 +7,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="x_all">
         <div class="x_left">
-            <div>
-                <img src="images/331.jpg" alt="" /></div>
             <div class="x_left_t2">
-            <a href="xssl.aspx">
-                <asp:Label ID="Label1" runat="server" Text=" 新手上路"></asp:Label></a>
-                <asp:Repeater ID="Repeater1" runat="server">
+
+                <div class="product">
+				<div class="product-listy">
+					<h3>our News</h3>
+					<ul class="product-list">
+                        <li><a href="xssl.aspx">新手上路 </a> </li>
+              <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
                         <ul>
                             <li><a href='show.aspx?id=<%#Eval("_cateid")%>'>
@@ -20,7 +22,11 @@
                         </ul>
                     </ItemTemplate>
                 </asp:Repeater>
-                <a href="zc.aspx">个人注册及信息管理</a>
+                        <li><a href="newlist.aspx">友情链接 </a> </li>
+                        <li><a href="zc.aspx">个人注册及信息管理</a></li>
+					 </ul>
+				</div>
+</div>
             </div>
         </div>
         <div class="x_right">

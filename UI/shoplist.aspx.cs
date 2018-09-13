@@ -13,6 +13,11 @@ public partial class shoplist : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["_user_name"] == null)
+        {
+            Common.MessageAlert.Alert(Page, "对不起，您还没有登入！！");
+            Response.Redirect("Login.aspx");
+        }
         if (!IsPostBack)
         {
            

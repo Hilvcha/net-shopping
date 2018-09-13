@@ -44,12 +44,7 @@ public partial class cjwt : System.Web.UI.Page
         else
         {
             sdr.Close();
-            if (Label1.Text == "个人注册及信息管理")
-            {
-                Response.Write(Label1.Text);
-                Page.Title = "个人注册及信息管理";
-
-            }
+      
         }
        
 

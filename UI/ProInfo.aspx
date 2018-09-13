@@ -62,6 +62,12 @@
      	}		
      
      
+     .x_left {
+         height: 16px;
+         width: 962px;
+     }
+     
+     
  </style>
  <script type="text/javascript" language="javascript">
 	function expand(el)
@@ -97,43 +103,37 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="in_t_l">
-         <div class="in_t_l_s">
-                <asp:TextBox ID="TextBox1" runat="server" CssClass="in_t_l_sa" Height="16px" 
-                    Width="50px"></asp:TextBox><a href="#"><img src="images/search_right1.gif" style="margin-bottom:-4px;" /></a>
-         </div>
-         <div class="pro_ys"><img src="images/1267550468552885369.gif" /></div>
-         <div> 
-        
-  
+<div  class="x_left" style="float:left">
+        	<div class="product">
+				<div class="product-listy">
+					<h3>our Products</h3>
+					<ul class="product-list">
+                       
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
-    <div onmouseout="expand1(<%#Eval("_top_layer_id") %>)"  onmouseover="expand(<%#Eval("_top_layer_id")%>)"  >
-
-        <div style="width:90px" class="cctelist"  >
-        <a  href="#"> <%#Eval("_top_layer_name") %></a>
-        </div>
- 
+        <div onmouseout="expand1(<%#Eval("_top_layer_id") %>)"  onmouseover="expand(<%#Eval("_top_layer_id")%>)"  >
+        <li><a href='newscate.aspx?uid=<%#Eval("_top_layer_id")%>'><%#Eval("_top_layer_name")%></a></li>
       <div id="<%#Eval("_top_layer_id")%>"  style="margin:0  0 0 10px;  width:85px;  display:none;  "  >
-      <ul class="cc">
+      <ul class="product-list">
       <%# datas(Eval("_top_layer_id").ToString()) %>
       </ul>
          </div>  
        </div>
            </ItemTemplate>
            </asp:Repeater>
-           
-           
-            </div>
-         
-    </div>
-    <div class="pro_r">
+                        
+					 </ul>
+				</div>
+</div>
+
+</div> 
+    <div class="pro_r"style="float:left">
         <div class="info_t_t"></div>
         <div class="info_t_b">
             <div class="info_t_b_l">
                               <a href=' <%=img_url.Text%>' class = 'cloud-zoom' id='zoom1' rel="adjustX:10, adjustY:0,zoomWidth:300,zoomHeight:160,showTitle:false">
                                  
-                <asp:Image ID="Image_1" runat="server" Height="320px" Width="280px" />
+                <asp:Image ID="Image_1" runat="server" Height="324px" Width="289px" />
                 </a></div>
             <div class="info_t_b_r">
                <div style="text-align:center;">

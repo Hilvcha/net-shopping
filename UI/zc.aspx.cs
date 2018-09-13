@@ -22,9 +22,7 @@ public partial class zc : System.Web.UI.Page
         Repeater1.DataSource = ds;
         Repeater1.DataBind();
 
-        Page.Title = Label1.Text;
-        //下载于www.51aspx.com
-
+ 
     }
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {

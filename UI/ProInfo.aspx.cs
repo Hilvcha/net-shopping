@@ -30,7 +30,7 @@ public partial class ProInfo : System.Web.UI.Page
             uid.Text = Request.QueryString["uid"].ToString();
             int u_id = Convert.ToInt32(uid.Text);
 
-            //下载于www.51aspx.com
+          
 
             BLL.product prob = new BLL.product();
             SqlDataReader dr_pro = prob.selectupdate(u_id);
@@ -171,7 +171,7 @@ public partial class ProInfo : System.Web.UI.Page
                     Common.MessageAlert.Alert(Page, "收藏成功！");
                 }
             }
-            //下载于www.51aspx.com
+         
         }
 
     }
@@ -199,7 +199,7 @@ public partial class ProInfo : System.Web.UI.Page
             {
                 dt = new DataTable();
                 dt.Columns.Add("id", typeof(Int32));
-                //下载于www.51aspx.com
+              
                 dt.Columns.Add("localprice", typeof(Double));
                 dt.Columns.Add("posttime", typeof(String));
                 dt.Columns.Add("buycount", typeof(Int32));

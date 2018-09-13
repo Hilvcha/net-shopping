@@ -59,9 +59,9 @@
         <div class="user-desc">
 		<div class="container">
 			<ul>
-				<li><a href="checkout.html">Checkout</a></li>
-				<li><i class="user"></i><a href="account.html">My Account</a></li>
-				<li><i class="cart"></i><a href="#">Cart (3)</a></li>
+				<li><a href="Login.aspx">login</a></li>
+				<li><i class="user"></i><a href="Register.aspx">Register</a></li>
+				<li><i class="cart"></i><a href="shoplist.aspx">Cart</a></li>
 			</ul>
 		</div>
 		</div>
@@ -81,7 +81,7 @@
 						<li><a href="index.aspx" data-hover="PRODUCTS">PRODUCTS</a></li>
 						<li><a href="kfzx.aspx" data-hover="HELP">HELP</a></li>
                         <li><a href="Message.aspx" data-hover="MESSAGE">MESSAGE</a></li>
-                        <li><a href="collect.aspx" data-hover="Favorite">Favorite</a></li>
+                        <li><a href="ACIndex.aspx" data-hover="INFO">INFO</a></li>
 					</ul>
 				</div>
 				 <!--script-nav-->
@@ -114,6 +114,7 @@
                             <form runat="server">
                               <asp:ImageButton ID="ImageButton1" runat="server"  
                                     ImageUrl="~/images/button.png" onclick="ImageButton1_Click"/>
+
                                 </form>
                            
 </form>

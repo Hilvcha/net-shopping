@@ -58,7 +58,7 @@ public partial class Login_aa : System.Web.UI.Page
                 
                 if (dr.Read())
                 {
-                    Response.Redirect("ACIndex.aspx");
+                    Response.Redirect("index.aspx");
 
 
                     
@@ -85,5 +85,9 @@ public partial class Login_aa : System.Web.UI.Page
             }
 
         }
+    }
+    protected void Unnamed_ServerClick(object sender, EventArgs e)
+    {
+        Response.Redirect("index.aspx");
     }
 }

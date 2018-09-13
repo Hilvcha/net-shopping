@@ -3,7 +3,7 @@
 <%@ Register assembly="AspNetPager" namespace="Wuqi.Webdiyer" tagprefix="webdiyer" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-<script type="text/javascript" language="javascript">
+    <script type="text/javascript" language="javascript">
 	function expand(el)
 	{
 		childObj = document.getElementById( el);
@@ -102,30 +102,38 @@
     <table cellpadding="0" cellspacing="0" class="style1">
         <tr>
             <td class="style2">
-            
-            <div style=" width:120px; margin:20px 0 0 5px;">  <img src="images/1267550468552885369.gif" />
-  <div> 
         
-        
+
+                <div  class="x_left" style="float:left">
+        	<div class="product">
+				<div class="product-listy">
+					<h3>our Products</h3>
+					<ul class="product-list">
+                       
          <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
        <div onmouseout="expand1(<%#Eval("_top_layer_id") %>)"  onmouseover="expand(<%#Eval("_top_layer_id")%>)"  >
 
-        <div style="width:90px" class="cctelist" onclick=""   >
-        <a  href="#"> <%#Eval("_top_layer_name") %></a></div>
+        
+        <li><a href='newscate.aspx?uid=<%#Eval("_top_layer_id")%>'><%#Eval("_top_layer_name")%></a></li>
+      
  
       <div id="<%#Eval("_top_layer_id")%>"  style="margin:0  0 0 10px;  width:85px;  display:none;  "  >
-      <ul class="cc">
+
+      <ul class="product-list">
       <%# datas(Eval("_top_layer_id").ToString()) %>
       </ul>
       </div>  
      </div>
            </ItemTemplate>
            </asp:Repeater>
-           
-           </div>
-            
-            </div>
+                        
+					 </ul>
+				</div>
+</div>
+
+</div> 
+          
             
               
             </td>
